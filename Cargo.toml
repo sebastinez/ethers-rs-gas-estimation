@@ -1,0 +1,16 @@
+[package]
+name = "ethers-rs-gas-estimation"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = { version = "0.5", features = ["ledger", "eip712"] }
+ethers-derive-eip712 = { git = 'https://github.com/ryanmtate/ethers-rs', branch = 'feature/derive-eip712' }
+ethers-core = { version = "0.5" }
+serde_json = { version = "1" }
+serde = { version = "1.0", features = ["derive"] }
+hex = "0.4.3"
+tokio = { version = "1.10", features = ["rt", "macros"] }
+rpassword = { version = "5.0" }
